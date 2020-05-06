@@ -1,0 +1,814 @@
+/**
+ * Настройки стилей для тем: light/dark
+ *
+ * @author      Viacheslav Glushko aka iXax <mail@ixax.ru>
+ * @version     1.0.201205.22.1
+ * @since     	1.0.201202.28.1
+ * @link        http://ixax.ru/portfolio/company/vgtrk/
+----------------------------------------------------------------------------- */
+/** * Конфигурация------------------------------------------------------------------------------ *//** * Устанавливаем кодировку------------------------------------------------------------------------------ */@charset "UTF-8";
+/** * Подключаем внешние mixins------------------------------------------------------------------------------ *//** * Main mixins * * 1.0.201202.11.1 *    .size -> .box-size * * @author      Viacheslav Glushko aka iXax <flutter@ixax.ru> * @version     1.0.201202.11.1 * @since		1.0.201202.01.1 * @link        http://ixax.ru/projects/less-stuff/----------------------------------------------------------------------------- *//** * Устанавливаем размер блока----------------------------------------------------------------------------- *//** * font-size/line-height----------------------------------------------------------------------------- *//** * Абсолютное позиционирование----------------------------------------------------------------------------- *//** * Multi-browser horizontal menu----------------------------------------------------------------------------- *//** * Vertical centered (необходимо задавать высоту элемента)----------------------------------------------------------------------------- *//** * DISPLAY: <block>, <inline-block>, <none>----------------------------------------------------------------------------- *//** * POSITION----------------------------------------------------------------------------- *//**
+ * CSS3 mixins
+ * 
+ * History:
+ * 		1.0.201202.01.1
+ * 			Старт проекта
+ * 		1.0.201202.09.1
+ * 			Добавлена частичная поддержка CSS3Pie (http://css3pie.com): .gradient добавляем -pie- свойство;
+ *
+ * @author      Viacheslav Glushko aka iXax <flutter@ixax.ru>
+ * @version     1.0.201204.11.1
+ * @since		1.0.201202.01.1
+ * @link        http://ixax.ru/projects/less-stuff/
+----------------------------------------------------------------------------- */
+/* PRIVATE background-clip */
+/**
+ * GRADIENTS
+----------------------------------------------------------------------------- */
+/**
+ * border-radius
+----------------------------------------------------------------------------- */
+/**
+ * box-shadow
+----------------------------------------------------------------------------- */
+/*
+
+.transition-duration(@duration: 0.2s) {
+  -moz-transition-duration: @duration;
+  -webkit-transition-duration: @duration;
+  transition-duration: @duration;
+}
+
+
+
+.scale(@ratio:1.5){
+  -webkit-transform:scale(@ratio);
+  -moz-transform:scale(@ratio);
+  transform:scale(@ratio);
+}
+
+.transition(@duration:0.2s, @ease:ease-out) {
+  -webkit-transition: all @duration @ease;
+  -moz-transition: all @duration @ease;
+  transition: all @duration @ease;
+}
+
+.columns(@colwidth: 250px, @colcount: 0, @colgap: 50px, @columnRuleColor: #EEE, @columnRuleStyle: solid, @columnRuleWidth: 1px) {
+  -moz-column-width: @colwidth;
+  -moz-column-count: @colcount;
+  -moz-column-gap: @colgap;
+  -moz-column-rule-color: @columnRuleColor;
+  -moz-column-rule-style: @columnRuleStyle;
+  -moz-column-rule-width: @columnRuleWidth;
+  -webkit-column-width: @colwidth;
+  -webkit-column-count: @colcount;
+  -webkit-column-gap: @colgap;
+  -webkit-column-rule-color: @columnRuleColor;
+  -webkit-column-rule-style: @columnRuleStyle;
+  -webkit-column-rule-width: @columnRuleWidth;
+  column-width: @colwidth;
+  column-count: @colcount;
+  column-gap: @colgap;
+  column-rule-color: @columnRuleColor;
+  column-rule-style: @columnRuleStyle;
+  column-rule-width: @columnRuleWidth;
+}
+
+.translate(@x:0, @y:0) {
+  -moz-transform: translate(@x, @y);
+  -webkit-transform: translate(@x, @y);
+  -o-transform: translate(@x, @y);
+  -ms-transform: translate(@x, @y);
+  transform: translate(@x, @y);
+}
+*/
+/** * Подключаем mixins/variables проекта------------------------------------------------------------------------------ *//**
+ * Переменные проекта
+ *
+ * @author      Viacheslav Glushko aka iXax <mail@ixax.ru>
+ * @version     1.0.201205.12.1
+ * @since     	1.0.201202.01.1
+ * @link        http://ixax.ru/portfolio/company/vgtrk/
+----------------------------------------------------------------------------- */
+/**
+ * Box sizes
+----------------------------------------------------------------------------- */
+/**
+ * Цвета текста
+----------------------------------------------------------------------------- */
+/* Цвет фона у активных элементов */
+/**
+ * Цвета в градиентных блоках и кнопках
+----------------------------------------------------------------------------- */
+/* #ddd */
+/**
+ * Цвета фона и рамок у блоков
+----------------------------------------------------------------------------- */
+/**
+ * Иконки
+------------------------------------------------------------------------------ */
+/**
+ * BODY Theming
+----------------------------------------------------------------------------- */
+/*@theme-light-bg:    #ededed;*/
+/** * Presets mixins *  * * @author      Viacheslav Glushko aka iXax <mail@ixax.ru> * @version     1.0.201205.12.1 * @since     	1.0.201202.01.1 * @link        http://ixax.ru/portfolio/company/vgtrk/----------------------------------------------------------------------------- *//** * Font----------------------------------------------------------------------------- *//** * Градиенты----------------------------------------------------------------------------- *//** * Background  с точечками------------------------------------------------------------------------------ *//** * Background с диагональным полосками------------------------------------------------------------------------------ *//** * Подложка под блоками------------------------------------------------------------------------------ *//** * Вогнутая кнопка с тенюшками------------------------------------------------------------------------------ *//** * Иконка поверх превьюшки видео <a>----------------------------------------------------------------------------- *//** * PICTURE LINK------------------------------------------------------------------------------ *//** * Фотка в персонах и галереях------------------------------------------------------------------------------ *//** * Малые иконки просмотров / фотографий / комментариев / подробнее------------------------------------------------------------------------------ *//** * “Правильный” text-shadow------------------------------------------------------------------------------ *//** * Стиль текста в статьях------------------------------------------------------------------------------ *//** * Close button------------------------------------------------------------------------------ *//**
+ * BODY Theming
+----------------------------------------------------------------------------- */
+body.theme_light,
+body.theme_light .bg-main {
+  /*background-color: @theme-light-bg;*/
+
+  background-color: #eeeff1;
+  /* background-color:@gradient-gray-border-top;*/
+
+}
+body.theme_dark,
+body.theme_dark .bg-main {
+  background-color: #000000;
+}
+/* Standalone ссылки. Reflection будет делаться jQuery плагином */
+body.theme_dark .icon-brand-home {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px 1px;
+}
+body.theme_dark .icon-brand-comments {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -29px;
+}
+body.theme_dark .icon-brand-persons {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -58px;
+}
+body.theme_dark .icon-brand-news {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -91px;
+}
+body.theme_dark .icon-brand-about {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -122px;
+}
+body.theme_dark .icon-brand-photo {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -152px;
+}
+body.theme_dark .icon-brand-video {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -182px;
+}
+body.theme_dark .icon-brand-vote {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -212px;
+}
+body.theme_dark .icon-brand-quiz {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -242px;
+}
+body.theme_dark .icon-brand-anketa {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -272px;
+}
+body.theme_dark .icon-brand-audio {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -302px;
+}
+body.theme_dark .icon-brand-interview {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -332px;
+}
+body.theme_dark .icon-brand-exclusive {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -362px;
+}
+body.theme_dark .icon-brand-announce {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -392px;
+}
+body.theme_light .icon-brand-home {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -453px;
+}
+body.theme_light .icon-brand-comments {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -483px;
+}
+body.theme_light .icon-brand-persons {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -512px;
+}
+body.theme_light .icon-brand-news {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -545px;
+}
+body.theme_light .icon-brand-about {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -576px;
+}
+body.theme_light .icon-brand-photo {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -606px;
+}
+body.theme_light .icon-brand-video {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -636px;
+}
+body.theme_light .icon-brand-vote {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -666px;
+}
+body.theme_light .icon-brand-quiz {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -696px;
+}
+body.theme_light .icon-brand-anketa {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -726px;
+}
+body.theme_light .icon-brand-audio {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -756px;
+}
+body.theme_light .icon-brand-interview {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -786px;
+}
+body.theme_light .icon-brand-exclusive {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -816px;
+}
+body.theme_light .icon-brand-announce {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -846px;
+}
+/* Ссылки в brand-menu */
+.light a.icon-brand-home {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px 1px;
+}
+.light a.icon-brand-comments {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -29px;
+}
+.light a.icon-brand-persons {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -58px;
+}
+.light a.icon-brand-news {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -91px;
+}
+.light a.icon-brand-about {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -122px;
+}
+.light a.icon-brand-photo {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -152px;
+}
+.light a.icon-brand-video {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -182px;
+}
+.light a.icon-brand-vote {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -212px;
+}
+.light a.icon-brand-quiz {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -242px;
+}
+.light a.icon-brand-anketa {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -272px;
+}
+.light a.icon-brand-audio {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -302px;
+}
+.light a.icon-brand-interview {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -332px;
+}
+.light a.icon-brand-exclusive {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -362px;
+}
+.light a.icon-brand-announce {
+  display: -moz-inline-stack;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 25px;
+  height: 24px;
+  background-image: url('../i/brand/icons_sprite-3.png');
+  background-repeat: no-repeat;
+  background-position: -26px -392px;
+}
+/**
+ * Heads theming
+------------------------------------------------------------------------------ */
+body.theme_light h1,
+body.theme_light h1 a {
+  color: #566a8b;
+}
+h4.theme a.icon {
+  background-color: #ffffff !important;
+}
+h4.theme span.subtitle {
+  color: #999999;
+}
+body.theme_light h4.theme .topper {
+  /*position: absolute;
+            top: 0;*/
+
+}
+body.theme_light h4.theme span.title {
+  color: #555555;
+  position: relative;
+  display: inline-block;
+  /*margin-left: 29px;*/
+
+  max-width: 420px !important;
+}
+body.theme_light h4.theme div.parental {
+  width: 22px;
+  height: 23px;
+  position: absolute;
+  right: -34px;
+  top: 0;
+  background-image: url('../i/brand/age-sprite.png');
+  background-repeat: no-repeat;
+}
+body.theme_light h4.theme div.age_18 {
+  background-position: -2px -174px;
+}
+body.theme_light h4.theme div.age_16 {
+  background-position: -2px -200px;
+}
+body.theme_light h4.theme div.age_12 {
+  background-position: -2px -226px;
+}
+body.theme_light h4.theme div.age_6 {
+  background-position: -2px -252px;
+}
+body.theme_light h4.theme div.age_0 {
+  background-position: -2px -278px;
+}
+body.theme_light h4.theme div.age_ {
+  background-image: none;
+}
+body.theme_light h4.theme p.line {
+  background-color: #999999;
+  border-bottom-color: #fff;
+}
+/* Выключаем бордер у темных тем */
+body.theme_dark h4.theme span.title {
+  color: #fff;
+}
+body.theme_dark h4.theme div.parental {
+  width: 22px;
+  height: 23px;
+  position: absolute;
+  right: -34px;
+  top: 0;
+  background-image: url('../i/brand/age-sprite.png');
+  background-repeat: no-repeat;
+}
+body.theme_dark h4.theme div.age_18 {
+  background-position: -2px -174px;
+}
+body.theme_dark h4.theme div.age_16 {
+  background-position: -2px -200px;
+}
+body.theme_dark h4.theme div.age_12 {
+  background-position: -2px -226px;
+}
+body.theme_dark h4.theme div.age_6 {
+  background-position: -2px -252px;
+}
+body.theme_dark h4.theme div.age_0 {
+  background-position: -2px -278px;
+}
+body.theme_dark h4.theme div.age_ {
+  background-image: none;
+}
+body.theme_dark h4.theme p.line {
+  border-bottom: none;
+}
+/**
+ * Main content theming
+------------------------------------------------------------------------------ */
+body.theme_light #main {
+  background-color: #ffffff;
+}
+body.theme_dark #main {
+  background-color: #ffffff;
+}
+/**
+ * THEME HEADINGS TEXT-SHADOW
+------------------------------------------------------------------------------ */
+body.theme_light h4.h-block {
+  width: 511px;
+  display: block;
+  float: left;
+}
+body.theme_light h4.theme span.title {
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+}
+body.theme_light h4.theme span.subtitle {
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+}
+body.theme_dark h4.theme span.title span.title {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+body.theme_dark h4.theme span.title span.subtitle {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+/**
+ * THEME PICS BORDERED
+------------------------------------------------------------------------------ */
+body.theme_light a.pic_bordered {
+  background-color: #ffffff;
+  border-color: #bfbfbf;
+}
+body.theme_light a.pic_bordered:hover {
+  background-color: #fff;
+}
+/**
+ * Настройка ul, li, ol, div, p в текстах
+------------------------------------------------------------------------------ */
+body.theme .theme_text,
+body.theme .theme_text p,
+body.theme .theme_text div,
+body.theme .theme_text ul {
+  margin-bottom: 20px;
+  line-height: 1.35em !important;
+}
+body.theme .theme_text li {
+  display: list-item;
+  margin: 3px 0 3px 20px;
+}
+body.theme .theme_text ol li {
+  list-style-type: decimal;
+}
+body.theme .theme_text ul li {
+  list-style-type: square;
+}
+body.theme .theme_text a {
+  text-decoration: underline;
+  font-weight: normal;
+}
+body.theme .theme_text a:hover {
+  text-decoration: none;
+}
+body.theme .theme_text a.go {
+  text-decoration: none;
+}
+body.theme .theme_text a.go:hover {
+  text-decoration: none;
+}
+body.theme .theme_text strong a {
+  font-weight: bold;
+}
+/**
+ * ЧИТАТЬ ДАЛЬШЕ
+------------------------------------------------------------------------------ */
+body.theme_light a.more,
+body.theme_light span.more {
+  color: #bfbfbf;
+}
+/**
+ * ВЫДЕЛЕННЫЙ БЛОК
+------------------------------------------------------------------------------ */
+body.theme_light .theme_highlighted,
+body.theme_light .theme_highlight:hover {
+  background-color: #fff;
+}
+/**
+ * INPUTS, TEXTAREA, CHECKBOXES
+------------------------------------------------------------------------------ */
+body.theme .theme_inputs {
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border-bottom-color: #bfbfbf;
+}
+body.theme_light .theme_inputs {
+  background-color: #ffffff;
+  color: #555555;
+}
+/**
+ * TEXT SHADOWS
+------------------------------------------------------------------------------ */
+body.theme_light .theme_shadow {
+  -webkit-box-shadow: 0px 0px 4px #c2c2c2;
+  -moz-box-shadow: 0px 0px 4px #c2c2c2;
+  box-shadow: 0px 0px 4px #c2c2c2;
+}
+/**
+ * LINES / BORDERS
+------------------------------------------------------------------------------ */
+body.theme_light .item_line {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+/**
+* Заголовки-ссылки всех айтемов
+------------------------------------------------------------------------------ */
+body.theme a.item_title {
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+}
+body.theme a.item_title:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,192 @@
+/**
+ * Site diffs (Russia1/Russia2)
+ *
+ * @author      Viacheslav Glushko aka iXax <mail@ixax.ru>
+ * @version     1.0.201204.26.1
+ * @since       1.0.201204.26.1
+ * @link        http://ixax.ru/portfolio/company/vgtrk/
+----------------------------------------------------------------------------- */
+/** * Конфигурация------------------------------------------------------------------------------ *//** * Устанавливаем кодировку------------------------------------------------------------------------------ */@charset "UTF-8";
+/** * Подключаем внешние mixins------------------------------------------------------------------------------ *//** * Main mixins * * 1.0.201202.11.1 *    .size -> .box-size * * @author      Viacheslav Glushko aka iXax <flutter@ixax.ru> * @version     1.0.201202.11.1 * @since		1.0.201202.01.1 * @link        http://ixax.ru/projects/less-stuff/----------------------------------------------------------------------------- *//** * Устанавливаем размер блока----------------------------------------------------------------------------- *//** * font-size/line-height----------------------------------------------------------------------------- *//** * Абсолютное позиционирование----------------------------------------------------------------------------- *//** * Multi-browser horizontal menu----------------------------------------------------------------------------- *//** * Vertical centered (необходимо задавать высоту элемента)----------------------------------------------------------------------------- *//** * DISPLAY: <block>, <inline-block>, <none>----------------------------------------------------------------------------- *//** * POSITION----------------------------------------------------------------------------- *//**
+ * CSS3 mixins
+ * 
+ * History:
+ * 		1.0.201202.01.1
+ * 			Старт проекта
+ * 		1.0.201202.09.1
+ * 			Добавлена частичная поддержка CSS3Pie (http://css3pie.com): .gradient добавляем -pie- свойство;
+ *
+ * @author      Viacheslav Glushko aka iXax <flutter@ixax.ru>
+ * @version     1.0.201204.11.1
+ * @since		1.0.201202.01.1
+ * @link        http://ixax.ru/projects/less-stuff/
+----------------------------------------------------------------------------- */
+/* PRIVATE background-clip */
+/**
+ * GRADIENTS
+----------------------------------------------------------------------------- */
+/**
+ * border-radius
+----------------------------------------------------------------------------- */
+/**
+ * box-shadow
+----------------------------------------------------------------------------- */
+/*
+
+.transition-duration(@duration: 0.2s) {
+  -moz-transition-duration: @duration;
+  -webkit-transition-duration: @duration;
+  transition-duration: @duration;
+}
+
+
+
+.scale(@ratio:1.5){
+  -webkit-transform:scale(@ratio);
+  -moz-transform:scale(@ratio);
+  transform:scale(@ratio);
+}
+
+.transition(@duration:0.2s, @ease:ease-out) {
+  -webkit-transition: all @duration @ease;
+  -moz-transition: all @duration @ease;
+  transition: all @duration @ease;
+}
+
+.columns(@colwidth: 250px, @colcount: 0, @colgap: 50px, @columnRuleColor: #EEE, @columnRuleStyle: solid, @columnRuleWidth: 1px) {
+  -moz-column-width: @colwidth;
+  -moz-column-count: @colcount;
+  -moz-column-gap: @colgap;
+  -moz-column-rule-color: @columnRuleColor;
+  -moz-column-rule-style: @columnRuleStyle;
+  -moz-column-rule-width: @columnRuleWidth;
+  -webkit-column-width: @colwidth;
+  -webkit-column-count: @colcount;
+  -webkit-column-gap: @colgap;
+  -webkit-column-rule-color: @columnRuleColor;
+  -webkit-column-rule-style: @columnRuleStyle;
+  -webkit-column-rule-width: @columnRuleWidth;
+  column-width: @colwidth;
+  column-count: @colcount;
+  column-gap: @colgap;
+  column-rule-color: @columnRuleColor;
+  column-rule-style: @columnRuleStyle;
+  column-rule-width: @columnRuleWidth;
+}
+
+.translate(@x:0, @y:0) {
+  -moz-transform: translate(@x, @y);
+  -webkit-transform: translate(@x, @y);
+  -o-transform: translate(@x, @y);
+  -ms-transform: translate(@x, @y);
+  transform: translate(@x, @y);
+}
+*/
+/** * Подключаем mixins/variables проекта------------------------------------------------------------------------------ *//**
+ * Переменные проекта
+ *
+ * @author      Viacheslav Glushko aka iXax <mail@ixax.ru>
+ * @version     1.0.201205.12.1
+ * @since     	1.0.201202.01.1
+ * @link        http://ixax.ru/portfolio/company/vgtrk/
+----------------------------------------------------------------------------- */
+/**
+ * Box sizes
+----------------------------------------------------------------------------- */
+/**
+ * Цвета текста
+----------------------------------------------------------------------------- */
+/* Цвет фона у активных элементов */
+/**
+ * Цвета в градиентных блоках и кнопках
+----------------------------------------------------------------------------- */
+/* #ddd */
+/**
+ * Цвета фона и рамок у блоков
+----------------------------------------------------------------------------- */
+/**
+ * Иконки
+------------------------------------------------------------------------------ */
+/**
+ * BODY Theming
+----------------------------------------------------------------------------- */
+/*@theme-light-bg:    #ededed;*/
+/** * Presets mixins *  * * @author      Viacheslav Glushko aka iXax <mail@ixax.ru> * @version     1.0.201205.12.1 * @since     	1.0.201202.01.1 * @link        http://ixax.ru/portfolio/company/vgtrk/----------------------------------------------------------------------------- *//** * Font----------------------------------------------------------------------------- *//** * Градиенты----------------------------------------------------------------------------- *//** * Background  с точечками------------------------------------------------------------------------------ *//** * Background с диагональным полосками------------------------------------------------------------------------------ *//** * Подложка под блоками------------------------------------------------------------------------------ *//** * Вогнутая кнопка с тенюшками------------------------------------------------------------------------------ *//** * Иконка поверх превьюшки видео <a>----------------------------------------------------------------------------- *//** * PICTURE LINK------------------------------------------------------------------------------ *//** * Фотка в персонах и галереях------------------------------------------------------------------------------ *//** * Малые иконки просмотров / фотографий / комментариев / подробнее------------------------------------------------------------------------------ *//** * “Правильный” text-shadow------------------------------------------------------------------------------ *//** * Стиль текста в статьях------------------------------------------------------------------------------ *//** * Close button------------------------------------------------------------------------------ *//**
+ * /index/ box-shadow on main blocks
+----------------------------------------------------------------------------- */
+body.site_russia1 div.b-box-shadow {
+  -webkit-box-shadow: 0 5px 12px #666666;
+  -moz-box-shadow: 0 5px 12px #666666;
+  box-shadow: 0 5px 12px #666666;
+}
+body.site_russia2 div.b-box-shadow {
+  -webkit-box-shadow: 0 5px 12px #000000;
+  -moz-box-shadow: 0 5px 12px #000000;
+  box-shadow: 0 5px 12px #000000;
+}
+/**
+ * #promo
+----------------------------------------------------------------------------- */
+body.site_russia2 #promo.low {
+  background: rgba(0, 0, 0, 0.5);
+}
+body.site_russia2 #promo.thin {
+  background: rgba(0, 0, 0, 0.5);
+}
+body.site_russia2 #promo.thin div.wrap {
+  background: none;
+}
+body.site_russia2 #promo h1,
+body.site_russia2 #promo h1 a {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(57, 108, 255, 0.4);
+}
+/**
+ * #MAIN border-top
+----------------------------------------------------------------------------- */
+body.site_russia2 #main {
+  border-top: 0;
+}
+/**
+ * BODY
+----------------------------------------------------------------------------- */
+body.site_russia2 {
+  background-color: #1c1c1c;
+  background-image: url("/i/main_bg-russia2.jpg");
+}
+body.site_russiak {
+  background-color: #1c1c1c;
+  background-image: url("/i/main_bg-russiak.jpg");
+}
+/**
+ * Вкладки на /video/
+----------------------------------------------------------------------------- */
+body.site_russia2 #promo a.logo {
+  background-image: url("/i/logo/standart-russia2.png");
+}
+body.site_russia2 #promo div.b-video-genres ul.items li a {
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
+}
+body.site_russia2 #promo div.b-video-genres ul.items li a.active {
+  color: #333333;
+  text-shadow: 0 1px 0 #eee;
+}
+body.site_russia2 #promo div.b-video-genres ul.items li a:hover {
+  color: #333333;
+  text-shadow: 0 1px 0 #eee;
+}
+body.site_russiak #promo a.logo {
+  background-image: url("/i/logo/standart-russiak.png");
+}
+body.site_russiak div.b-box-shadow {
+  -webkit-box-shadow: inset 0 5px 12px #666666;
+  -moz-box-shadow: inset 0 5px 12px #666666;
+  box-shadow: inset 0 5px 12px #666666;
+}
+/* 
+ * значок "смотреть трейлер" чуть повыше для России-2 с ее длинным названиями 
+ */
+body.site_russia2 div.b-soon div.b-soon__air div.items_wrap ul.items li.item div.name a.videotrailer {
+  margin-top: 2px;
+}
