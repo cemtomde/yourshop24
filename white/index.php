@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
   <title>
-   Новые курсы по оздоровлению с помощью Йоги
+   Многофункциональное устройство
   </title>
   <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap&subset=cyrillic-ext" rel="stylesheet">
@@ -50,13 +50,13 @@
        <h1 class="h1">
         Твоя жизнь станет легче 
         <div class="uppercase">
-         после прохождения данного курса 
+         с этим устройством
         </div>
        </h1>
        <div class="form-wrap">
         <div class="form-wrap__content">
          <p class="form-text">
-          Чтобы записаться на первые онлайн-курсы йоги оставьте ваш номер телефона и имя в форме на сайте
+          Чтобы записаться на презентацию устройства оставьте ваш номер телефона и имя в форме на сайте
           <b>
            и нажмите Отправить
           </b>

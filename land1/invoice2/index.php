@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
  <!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)

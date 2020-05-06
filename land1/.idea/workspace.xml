@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75fd694e-aa7c-4af8-8f56-a250f034d777" name="Default" comment="" />
+    <list default="true" id="5b6830e6-e5c5-4f58-9b40-8a3dfd90fe7b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,14 +14,19 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17172">
-              <caret line="882" column="29" lean-forward="true" selection-start-line="882" selection-start-column="29" selection-end-line="882" selection-end-column="29" />
+            <state relative-caret-position="266">
+              <caret line="79" column="54" lean-forward="false" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>gatimer.r</find>
+    </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -40,8 +45,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1920" />
-    <option name="height" value="1037" />
+    <option name="width" value="1152" />
+    <option name="height" value="1044" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -58,19 +63,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="ross" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ross" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sl990" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sl990" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -94,23 +99,23 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="75fd694e-aa7c-4af8-8f56-a250f034d777" name="Default" comment="" />
-      <created>1561462151514</created>
+      <changelist id="5b6830e6-e5c5-4f58-9b40-8a3dfd90fe7b" name="Default" comment="" />
+      <created>1560936409869</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1561462151514</updated>
-      <workItem from="1561462152719" duration="266000" />
+      <updated>1560936409869</updated>
+      <workItem from="1560936411077" duration="105000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266000" />
+    <option name="totallyTimeSpent" value="105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24786781" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14552239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -142,8 +147,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17172">
-          <caret line="882" column="29" lean-forward="true" selection-start-line="882" selection-start-column="29" selection-end-line="882" selection-end-column="29" />
+        <state relative-caret-position="266">
+          <caret line="79" column="54" lean-forward="false" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="54" />
           <folding />
         </state>
       </provider>
